@@ -5,8 +5,8 @@
 body{
     margin: 0px;
     display: grid; 
-    grid-template-columns: 2fr 12fr 1fr ; 
-  grid-template-rows: 1fr 4fr 75fr 68fr 70fr 10fr 1fr 1fr; 
+    grid-template-columns: 1fr 12fr 1fr ; 
+  grid-template-rows: 0.2fr 0.6fr 60fr 68fr 70fr 10fr 1fr 1fr; 
   
     gap: 2px 6px; 
    
@@ -33,11 +33,12 @@ body{
 
     align-items: center;
     justify-content: center;
-    border: 2px solid black;
+  
 
     background-color: white;
 
-    height: 60%;
+    height: 100%;
+    width: 100%;
 }
 
 .header-image{
@@ -48,8 +49,8 @@ body{
 
 #search{
     display: block;
-    width: 50%;
-    height: 30%;
+    width: 80%;
+    height: 40%;
     border: 1px solid blue;
     border-radius: 10em;
 
@@ -60,7 +61,10 @@ body{
     display: flex;
     flex-direction: row;
 
+    align-items: center;
     width:30%;
+
+    height: 50%;
 }
 
 .header-social{
@@ -68,13 +72,69 @@ body{
     flex-direction: row;
     justify-content: space-around;
 
+    align-items: center;
     width: 20%;
+
+    height: 50%;
 }
 
 .nav{
     grid-area: nav;
-  
+
+
+     background: linear-gradient(to right,#ff1d25 5%,#a0328c 35%,#7040a4 45%,#4359c7 55%,#0082e6 70%);
 }
+
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+
+    
+
+   
+}
+
+.produse-container{
+    display: flex;
+
+    background-color: white;
+
+    border-radius: 1em;
+
+    align-items: center;
+
+    text-decoration: none;
+    color: black;
+
+    min-width: 100px;
+    
+   
+    
+    
+}
+
+.selector-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    color: white;
+   
+    width: 35%;
+}
+
+.emag-help a{
+    text-decoration: none;
+    color: white;
+}
+
+
 
 .main{
     grid-area: main;
