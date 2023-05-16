@@ -146,7 +146,7 @@ body{
   
     grid-template-columns: 1fr 4fr 1fr ; 
     grid-template-rows: 60px 100px  1fr 1fr ; 
-    gap: 3px 3px; 
+    gap: 7px 5px; 
     grid-template-areas: 
       "inner inner inner"
       "aside1 aside2 aside2"
@@ -254,6 +254,7 @@ margin-left: 5%;
   .aside2 { 
     grid-area: aside2;
 
+    width: 75%;
    
    
     
@@ -263,14 +264,11 @@ margin-left: 5%;
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 90%;
+    width: 98%;
     height: 100%;
     align-content: space-between;
     justify-content: space-between;
-   
-
-   
-   
+     
 }
 
 .aside2-container-header{
@@ -306,10 +304,72 @@ margin-left: 5%;
 }
 
 
-  .product-container { 
+  .product-container-info { 
     grid-area: product-container;
+
+     
+    display:grid;
+    grid-template-columns: repeat(3,370px);
+    grid-template-rows: repeat(23,350px);
+    width: 88%;
+
+    grid-row-gap: 20px;
  }
 
+
+
+ .product-card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 90%;
+
+    background-color: white;
+
+    
+ }
+
+ .product-card-image{
+    display: block;
+    width: 170px;
+    height: 200px;
+ }
+
+ .product-card-description{
+    display: block;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+ }
+ .product-card-rating{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 70%;
+ }
+
+ .card-content{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .product-price{
+    color: red;
+    line-height: 40%;
+ }
+
+ .material-symbols-outlined{
+   
+    height: 100%;
+    width: 10%;
+}
+
+.shopping-cart{
+    background-color: red;
+    width: 20%;
+}
  
   
 
@@ -323,6 +383,10 @@ margin-left: 5%;
 .products-info{
     grid-area:products;
 }
-.page-section{
-    grid-area: page;
+
+.product-price-button{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
 }
+
