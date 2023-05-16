@@ -141,13 +141,14 @@ body{
 
     display: grid;
 
-  border: 2px solid black;
 
-    
-    grid-template-columns: 0.5fr 1fr 1fr; 
-    grid-template-rows: 200px 1.9px 1fr 1fr; 
+
+  
+    grid-template-columns: 1fr 4fr 1fr ; 
+    grid-template-rows: 60px 100px  1fr 1fr ; 
     gap: 3px 3px; 
     grid-template-areas: 
+      "inner inner inner"
       "aside1 aside2 aside2"
       "aside1 product-container product-container"
       "aside1 product-container product-container"
@@ -156,6 +157,10 @@ body{
 
  
 
+  .inner{
+    grid-area: inner;
+    color: gray;
+  }
   .aside1 { 
     grid-area: aside1;
 
@@ -248,7 +253,58 @@ margin-left: 5%;
 
   .aside2 { 
     grid-area: aside2;
+
+   
+   
+    
 }
+
+.aside2-container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 90%;
+    height: 100%;
+    align-content: space-between;
+    justify-content: space-between;
+   
+
+   
+   
+}
+
+.aside2-container-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1%;
+    justify-content: space-between;
+}
+
+.aside2-number-products{
+    display: block;
+    width: 87%;
+}
+
+.aside2-listing-panel{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    width: 100%;
+}
+
+.aside2-sort-control{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+.aside2-sort-control-item{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+}
+
 
   .product-container { 
     grid-area: product-container;
