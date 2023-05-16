@@ -159,18 +159,58 @@ body{
 
 
 display: grid;
-grid-template-columns: 270px;
-grid-template-rows: 190px;
+grid-template-columns: 200px;
+grid-template-rows: 190px 80px;
+grid-row-gap: 10px;
 font-size: 12px;
+margin-left: 5%;
 
 }
 
 .product-category-selector{
     display: flex;
     flex-direction: column;
-    background-color: #0082e691;
-    color: rgba(0, 0, 255, 0.827);
+    background-color: #0082e64f;
+    color: rgba(0, 0, 255, 0.458);
 }
+
+.emag-genius-container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+
+}
+
+.emag-genius-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.emag-genius-image{
+    display: block;
+    width: 90px;
+    height: 25px;
+}
+
+.emag-genius-container-selector{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+
+
+}
+
+.emag-genius-container-selector a{
+  text-decoration: none;   
+  color: black;
+}
+
+
   .aside2 { 
     grid-area: aside2;
 }
