@@ -160,7 +160,7 @@ body{
 
 display: grid;
 grid-template-columns: 200px;
-grid-template-rows: 190px 80px 280px 320px 110px 150px 210px;
+grid-template-rows: 190px 80px 280px 320px 110px 150px 210px 90px;
 grid-row-gap: 10px;
 font-size: 12px;
 margin-left: 5%;
